@@ -23,8 +23,6 @@ interface ArtItem {
   thumbnail: string;
   image: string;
   artist: string;
-  name: string;
-  description: string;
 }
 
 interface NovelItem {
@@ -46,35 +44,51 @@ interface LoveMessage {
 const ART_DATA: ArtItem[] = [
   {
     id: '1',
-    thumbnail: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=200&auto=format&fit=crop',
-    image: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=1200&auto=format&fit=crop',
-    artist: 'Elena Rossi',
-    name: 'Eternal Bloom',
-    description: 'A study of delicate white roses symbolizing the purity and endurance of love.'
+    thumbnail: './asset/kimyunji.jpg',
+    image: './asset/kimyunji.jpg',
+    artist: '김윤지',
   },
   {
     id: '2',
-    thumbnail: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=200&auto=format&fit=crop',
-    image: 'https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop',
-    artist: 'Julian Thorne',
-    name: 'Golden Hour Vows',
-    description: 'Capturing the precise moment promises are exchanged under the warmth of the setting sun.'
+    thumbnail: './asset/kkapssap.jpg',
+    image: './asset/kkapssap.jpg',
+    artist: '깝싹이',
   },
   {
     id: '3',
-    thumbnail: 'https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=200&auto=format&fit=crop',
-    image: 'https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=1200&auto=format&fit=crop',
-    artist: 'Sophia Chen',
-    name: 'The First Dance',
-    description: 'An abstract representation of movement, grace, and the beginning of a shared journey.'
+    thumbnail: './asset/donmang.png',
+    image: './asset/donmang.png',
+    artist: '돈까스망치',
   },
   {
     id: '4',
-    thumbnail: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=200&auto=format&fit=crop',
-    image: 'https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1200&auto=format&fit=crop',
-    artist: 'Marc Dubois',
-    name: 'Linen and Lace',
-    description: 'Focusing on the intricate textures of heritage fabrics that tell stories of generations.'
+    thumbnail: './asset/mimji.png',
+    image: './asset/mimji.png',
+    artist: '밈지',
+  },
+  {
+    id: '5',
+    thumbnail: './asset/at.jpg',
+    image: './asset/at.jpg',
+    artist: '앗',
+  },
+  {
+    id: '6',
+    thumbnail: './asset/ione.jpg',
+    image: './asset/ione.jpg',
+    artist: '이온',
+  },
+  {
+    id: '7',
+    thumbnail: './asset/wallo.png',
+    image: './asset/wallo.png',
+    artist: '왈로',
+  },
+  {
+    id: '8',
+    thumbnail: './asset/qua.png',
+    image: './asset/qua.png',
+    artist: '쿠아',
   }
 ];
 
