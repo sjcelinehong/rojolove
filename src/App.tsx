@@ -568,7 +568,7 @@ export default function App() {
         {/* MENU PAGE */}
         {view === 'menu' && (
           <ViewWrapper key="menu">
-            <div className="h-screen flex items-center justify-center bg-wedding-cream">
+            <div className="h-screen w-full flex items-center justify-center bg-wedding-cream">
               <div className="flex gap-8">
                 <motion.div
                   className="art-section w-1/4 h-80 rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
