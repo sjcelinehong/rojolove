@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500&display=swap");
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 
 @theme {
   --font-serif: "Playfair Display", serif;
-  --font-sans: "Noto Serif KR", serif;
+  --font-sans: "Gowun Batang", serif;
 
   --color-wedding-cream: #faf9f6;
   --color-wedding-gold: #c5a07d;
@@ -35,10 +35,15 @@
   }
 
   h1,
-  h2,
+  h2 {
+    @apply font-serif;
+  }
   h3,
   h4 {
-    @apply font-serif;
+    @apply font-sans;
+  }
+  p {
+    font-family: "Gowun Batang", serif;
   }
 }
 
