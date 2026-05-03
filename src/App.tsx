@@ -833,7 +833,7 @@ export default function App() {
                         <h3 className="text-3xl md:text-5xl font-serif mb-16 italic text-wedding-ink tracking-tight">Chapter I: {selectedNovel.name}</h3>
                         <div className="leading-loose text-wedding-ink/80 font-sans">
                           {selectedNovel.content.split('\n\n').map((para, pidx) => (
-                            <p key={pidx} className="indent-12">{para}</p>
+                            <p key={pidx} className="indent-7">{para}</p>
                           ))}
                         </div>
                         <div className="mt-20 text-center">
