@@ -23,6 +23,8 @@ interface ArtItem {
   thumbnail: string;
   image: string;
   artist: string;
+  name: string;
+  description: string;
 }
 
 interface NovelItem {
@@ -47,48 +49,64 @@ const ART_DATA: ArtItem[] = [
     thumbnail: './asset/kimyunji.jpg',
     image: './asset/kimyunji.jpg',
     artist: '김윤지',
+    name: 'Morning Bloom',
+    description: 'A delicate composition of light and atmosphere from 김윤지.',
   },
   {
     id: '2',
     thumbnail: './asset/kkapssap.jpg',
     image: './asset/kkapssap.jpg',
     artist: '깝싹이',
+    name: 'Whispering Shadows',
+    description: 'A moody exploration of form and contrast by 깝싹이.',
   },
   {
     id: '3',
     thumbnail: './asset/donmang.png',
     image: './asset/donmang.png',
     artist: '돈까스망치',
+    name: 'Golden Edge',
+    description: 'A vivid piece that captures bold texture and color.',
   },
   {
     id: '4',
     thumbnail: './asset/mimji.png',
     image: './asset/mimji.png',
     artist: '밈지',
+    name: 'Soft Reverie',
+    description: 'A dreamy visual story with gentle tones and motion.',
   },
   {
     id: '5',
     thumbnail: './asset/at.jpg',
     image: './asset/at.jpg',
     artist: '앗',
+    name: 'Quiet Momentum',
+    description: 'A minimalist narrative that balances stillness and energy.',
   },
   {
     id: '6',
     thumbnail: './asset/ione.jpg',
     image: './asset/ione.jpg',
     artist: '이온',
+    name: 'Eternal Flow',
+    description: 'A fluid illustration that celebrates movement and grace.',
   },
   {
     id: '7',
     thumbnail: './asset/wallo.png',
     image: './asset/wallo.png',
     artist: '왈로',
+    name: 'City Pulse',
+    description: 'An energetic scene filled with vibrant character and light.',
   },
   {
     id: '8',
     thumbnail: './asset/qua.png',
     image: './asset/qua.png',
     artist: '쿠아',
+    name: 'Dawn Line',
+    description: 'A serene study of horizon and quiet color fields.',
   }
 ];
 
