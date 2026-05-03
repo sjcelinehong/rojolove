@@ -569,7 +569,7 @@ export default function App() {
         {view === 'menu' && (
           <ViewWrapper key="menu">
             <div className="w-screen h-screen flex items-center justify-center bg-wedding-cream">
-              <div className="w-[40%] h-[60vh] flex gap-8 flex-col md:flex-row items-center justify-center">
+              <div className="w-[80%] h-[60vh] flex gap-8 flex-col md:flex-row items-center justify-center">
                 <motion.div
                   className="art-section w-full h-full rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
                   onClick={() => navigateTo('art')}
@@ -577,9 +577,9 @@ export default function App() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="absolute inset-0 bg-black/40"></div>
+                  <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" referrerPolicy="no-referrer" />
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
-                    <h2 className="text-4xl font-serif text-white mb-4">Art</h2>
-                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
+                    <h2 className="text-4xl font-serif text-white">Art</h2>
                   </div>
                 </motion.div>
                 <motion.div
@@ -589,9 +589,9 @@ export default function App() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="absolute inset-0 bg-black/40"></div>
+                  <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" referrerPolicy="no-referrer" />
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
-                    <h2 className="text-4xl font-serif text-white mb-4">Novel</h2>
-                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
+                    <h2 className="text-4xl font-serif text-white">Novel</h2>
                   </div>
                 </motion.div>
                 <motion.div
@@ -601,9 +601,9 @@ export default function App() {
                   transition={{ duration: 0.3 }}
                 >
                   <div className="absolute inset-0 bg-black/40"></div>
+                  <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="absolute inset-0 w-full h-full object-cover opacity-60" referrerPolicy="no-referrer" />
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
-                    <h2 className="text-4xl font-serif text-white mb-4">Love</h2>
-                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
+                    <h2 className="text-4xl font-serif text-white">Love</h2>
                   </div>
                 </motion.div>
               </div>
