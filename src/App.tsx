@@ -568,8 +568,8 @@ export default function App() {
         {/* MENU PAGE */}
         {view === 'menu' && (
           <ViewWrapper key="menu">
-            <div className="w-[80vw] h-screen flex items-center justify-center bg-wedding-cream">
-              <div className="w-[40%] h-[80vh] flex gap-8 flex-col md:flex-row items-center justify-center">
+            <div className="w-screen h-screen flex items-center justify-center bg-wedding-cream">
+              <div className="w-[40%] h-[60vh] flex gap-8 flex-col md:flex-row items-center justify-center">
                 <motion.div
                   className="art-section w-full h-full rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
                   onClick={() => navigateTo('art')}
@@ -579,7 +579,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Art</h2>
-                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
                 <motion.div
@@ -591,7 +591,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Novel</h2>
-                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
                 <motion.div
@@ -603,7 +603,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Love</h2>
-                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-full h-full rounded" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
               </div>
