@@ -830,8 +830,8 @@ export default function App() {
                         exit={{ y: -20, opacity: 0 }}
                         transition={{ duration: 0.6 }}
                       >
-                        <h3 className="text-4xl md:text-5xl font-serif mb-16 italic text-wedding-ink tracking-tight">Chapter I: {selectedNovel.name}</h3>
-                        <div className="space-y-12 leading-loose text-wedding-ink/80 text-xl font-light font-serif">
+                        <h3 className="text-3xl md:text-5xl font-serif mb-16 italic text-wedding-ink tracking-tight">Chapter I: {selectedNovel.name}</h3>
+                        <div className="leading-loose text-wedding-ink/80 font-sans">
                           {selectedNovel.content.split('\n\n').map((para, pidx) => (
                             <p key={pidx} className="indent-12">{para}</p>
                           ))}

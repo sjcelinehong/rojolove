@@ -14,7 +14,7 @@
 
 @layer base {
   body {
-    @apply bg-wedding-cream text-wedding-ink font-sans antialiased;
+    @apply bg-wedding-cream text-wedding-ink font-sans;
     position: relative;
   }
 
@@ -44,6 +44,7 @@
   }
   p {
     font-family: "Gowun Batang", serif;
+    font-size: 18px;
   }
 }
 
@@ -91,7 +92,6 @@
     background-position: center;
     background-repeat: no-repeat;
   }
-}
 
 /* Custom scrollbar for more elegance */
 ::-webkit-scrollbar {
