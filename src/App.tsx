@@ -727,7 +727,7 @@ export default function App() {
                           >
                             <img 
                               src={selectedArt.image} 
-                              alt={selectedArt.name} 
+                              alt={selectedArt.artist} 
                               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                               referrerPolicy="no-referrer"
                             />
@@ -752,14 +752,10 @@ export default function App() {
                             
                             <div className="space-y-1">
                               <p className="text-[10px] uppercase tracking-tighter text-wedding-gold font-bold">Work Name</p>
-                              <p className="text-2xl font-serif italic">{selectedArt.name}</p>
+                              <p className="text-2xl font-serif italic">{selectedArt.artist}</p>
                             </div>
 
                             <div className="h-px w-12 bg-wedding-gold/30 my-4" />
-                            
-                            <p className="text-sm text-wedding-ink/70 leading-relaxed font-sans max-w-xs">
-                              {selectedArt.description}
-                            </p>
 
                             <button 
                               onClick={() => navigateTo('menu')}
@@ -795,7 +791,7 @@ export default function App() {
                     animate={{ scale: 1, opacity: 1 }}
                     exit={{ scale: 0.95, opacity: 0 }}
                     src={selectedArt.image}
-                    alt={selectedArt.name}
+                    alt={selectedArt.artist}
                     className="max-w-full max-h-full object-contain rounded-sm"
                     referrerPolicy="no-referrer"
                   />
