@@ -579,7 +579,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Art</h2>
-                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
                 <motion.div
@@ -591,7 +591,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Novel</h2>
-                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
                 <motion.div
@@ -603,7 +603,7 @@ export default function App() {
                   <div className="absolute inset-0 bg-black/40"></div>
                   <div className="relative z-10 w-full flex flex-col items-center justify-center h-full">
                     <h2 className="text-4xl font-serif text-white mb-4">Love</h2>
-                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                   </div>
                 </motion.div>
               </div>
