@@ -16,6 +16,7 @@
   body {
     @apply bg-wedding-cream text-wedding-ink font-sans antialiased;
     position: relative;
+    overflow: hidden;
   }
 
   body::before {
@@ -25,9 +26,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/input_file_0.png");
+    background-image: url("/asset/background.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     opacity: 0.1;
     z-index: -1;
     pointer-events: none;
