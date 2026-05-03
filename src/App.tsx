@@ -35,8 +35,6 @@ interface ArtItem {
   thumbnail: string;
   image: string;
   artist: string;
-  name: string;
-  description: string;
 }
 
 interface NovelItem {
@@ -61,64 +59,48 @@ const ART_DATA: ArtItem[] = [
     thumbnail: kimyunjiImg,
     image: kimyunjiImg,
     artist: '김윤지',
-    name: 'Morning Bloom',
-    description: 'A delicate composition of light and atmosphere from 김윤지.',
   },
   {
     id: '2',
     thumbnail: kkapssapImg,
     image: kkapssapImg,
     artist: '깝싹이',
-    name: 'Whispering Shadows',
-    description: 'A moody exploration of form and contrast by 깝싹이.',
   },
   {
     id: '3',
     thumbnail: donmangImg,
     image: donmangImg,
     artist: '돈까스망치',
-    name: 'Golden Edge',
-    description: 'A vivid piece that captures bold texture and color.',
   },
   {
     id: '4',
     thumbnail: mimjiImg,
     image: mimjiImg,
     artist: '밈지',
-    name: 'Soft Reverie',
-    description: 'A dreamy visual story with gentle tones and motion.',
   },
   {
     id: '5',
     thumbnail: atImg,
     image: atImg,
     artist: '앗',
-    name: 'Quiet Momentum',
-    description: 'A minimalist narrative that balances stillness and energy.',
   },
   {
     id: '6',
     thumbnail: ioneImg,
     image: ioneImg,
     artist: '이온',
-    name: 'Eternal Flow',
-    description: 'A fluid illustration that celebrates movement and grace.',
   },
   {
     id: '7',
     thumbnail: walloImg,
     image: walloImg,
     artist: '왈로',
-    name: 'City Pulse',
-    description: 'An energetic scene filled with vibrant character and light.',
   },
   {
     id: '8',
     thumbnail: quaImg,
     image: quaImg,
     artist: '쿠아',
-    name: 'Dawn Line',
-    description: 'A serene study of horizon and quiet color fields.',
   }
 ];
 
