@@ -16,7 +16,6 @@
   body {
     @apply bg-wedding-cream text-wedding-ink font-sans antialiased;
     position: relative;
-    overflow: hidden;
   }
 
   body::before {
@@ -30,7 +29,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.1;
+    opacity: .8;
     z-index: -1;
     pointer-events: none;
   }
@@ -50,6 +49,29 @@
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
+  }
+
+  .art-section {
+    background-image: url('/asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .novel-section {
+    background-image: url('/asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .love-section {
+    background-image: url('/asset/laura-vinck-Hyu76loQLdk-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
   }
 
   .glass {

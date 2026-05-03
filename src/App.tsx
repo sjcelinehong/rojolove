@@ -568,40 +568,31 @@ export default function App() {
         {/* MENU PAGE */}
         {view === 'menu' && (
           <ViewWrapper key="menu">
-            <div className="flex flex-col items-center justify-center flex-grow p-6 bg-wedding-pattern relative overflow-hidden">
-              <div className="absolute inset-0 bg-white/60 backdrop-blur-sm"></div>
-              
-              <div className="relative z-10 w-full flex flex-col items-center">
-                <h2 className="text-4xl font-serif mb-12 italic text-wedding-ink/80 tracking-wide">Choose a Section</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 w-full max-w-5xl px-12">
-                {[
-                  { id: 'art', label: 'Art', icon: Palette, color: 'bg-[#E5E1DA]', number: '01' },
-                  { id: 'novel', label: 'Novel', icon: BookOpen, color: 'bg-[#D4CFB4]', number: '02' },
-                  { id: 'love', label: 'Love', icon: Heart, color: 'bg-[#F2E5D7]', number: '03' }
-                ].map((item, idx) => (
-                  <motion.button
-                    key={item.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: idx * 0.1, duration: 0.8 }}
-                    whileHover={{ scale: 1.05 }}
-                    onClick={() => navigateTo(item.id as View)}
-                    className="group flex flex-col items-center space-y-6"
-                    id={`menu-${item.id}`}
-                  >
-                    <div className={`w-full h-80 rounded-xl overflow-hidden border border-white shadow-lg transition-all duration-500 relative flex items-center justify-center ${item.color}`}>
-                      <div className="absolute inset-0 bg-wedding-gold opacity-0 group-hover:opacity-[0.05] transition-opacity duration-500"></div>
-                      <div className="serif text-6xl opacity-10 font-serif translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.number}</div>
-                      <item.icon className="absolute w-10 h-10 text-wedding-gold/40 group-hover:text-wedding-gold transition-colors duration-500" />
-                    </div>
-                    <span className="font-serif italic text-3xl tracking-wide group-hover:text-wedding-gold transition-colors duration-300">{item.label}</span>
-                  </motion.button>
-                ))}
+            <div className="flex flex-col">
+              <div className="art-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('art')}>
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="relative z-10 text-center">
+                  <h2 className="text-6xl font-serif text-white">Art</h2>
+                  <p className="text-white/80 mt-4">Click to explore</p>
+                </div>
+              </div>
+              <div className="novel-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('novel')}>
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="relative z-10 text-center">
+                  <h2 className="text-6xl font-serif text-white">Novel</h2>
+                  <p className="text-white/80 mt-4">Click to explore</p>
+                </div>
+              </div>
+              <div className="love-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('love')}>
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="relative z-10 text-center">
+                  <h2 className="text-6xl font-serif text-white">Love</h2>
+                  <p className="text-white/80 mt-4">Click to explore</p>
+                </div>
               </div>
             </div>
-          </div>
-        </ViewWrapper>
-      )}
+          </ViewWrapper>
+        )}
 
         {/* ART PAGE */}
         {view === 'art' && (
