@@ -700,7 +700,7 @@ export default function App() {
                           selectedArt?.id === item.id ? 'ring-2 ring-wedding-gold opacity-100' : 'opacity-60 grayscale hover:opacity-100 hover:grayscale-0'
                         }`}
                       >
-                        <img src={item.thumbnail} alt={item.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                        <img src={item.thumbnail} alt={item.artist} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
                       </motion.div>
                     ))}
                   </div>
@@ -748,11 +748,6 @@ export default function App() {
                             <div className="space-y-1">
                               <p className="text-[10px] uppercase tracking-tighter text-wedding-gold font-bold">Artist</p>
                               <h2 className="text-3xl font-serif">{selectedArt.artist}</h2>
-                            </div>
-                            
-                            <div className="space-y-1">
-                              <p className="text-[10px] uppercase tracking-tighter text-wedding-gold font-bold">Work Name</p>
-                              <p className="text-2xl font-serif italic">{selectedArt.artist}</p>
                             </div>
 
                             <div className="h-px w-12 bg-wedding-gold/30 my-4" />
