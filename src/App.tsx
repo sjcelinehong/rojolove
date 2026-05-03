@@ -568,27 +568,44 @@ export default function App() {
         {/* MENU PAGE */}
         {view === 'menu' && (
           <ViewWrapper key="menu">
-            <div className="flex flex-col">
-              <div className="art-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('art')}>
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative z-10 text-center">
-                  <h2 className="text-6xl font-serif text-white">Art</h2>
-                  <p className="text-white/80 mt-4">Click to explore</p>
-                </div>
-              </div>
-              <div className="novel-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('novel')}>
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative z-10 text-center">
-                  <h2 className="text-6xl font-serif text-white">Novel</h2>
-                  <p className="text-white/80 mt-4">Click to explore</p>
-                </div>
-              </div>
-              <div className="love-section h-screen relative flex items-center justify-center cursor-pointer" onClick={() => navigateTo('love')}>
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="relative z-10 text-center">
-                  <h2 className="text-6xl font-serif text-white">Love</h2>
-                  <p className="text-white/80 mt-4">Click to explore</p>
-                </div>
+            <div className="h-screen flex items-center justify-center bg-wedding-cream">
+              <div className="flex gap-8">
+                <motion.div
+                  className="art-section w-1/4 h-80 rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
+                  onClick={() => navigateTo('art')}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="absolute inset-0 bg-black/40"></div>
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                    <h2 className="text-4xl font-serif text-white mb-4">Art</h2>
+                    <img src="./asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                  </div>
+                </motion.div>
+                <motion.div
+                  className="novel-section w-1/4 h-80 rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
+                  onClick={() => navigateTo('novel')}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="absolute inset-0 bg-black/40"></div>
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                    <h2 className="text-4xl font-serif text-white mb-4">Novel</h2>
+                    <img src="./asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                  </div>
+                </motion.div>
+                <motion.div
+                  className="love-section w-1/4 h-80 rounded-lg shadow-lg cursor-pointer relative overflow-hidden"
+                  onClick={() => navigateTo('love')}
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <div className="absolute inset-0 bg-black/40"></div>
+                  <div className="relative z-10 flex flex-col items-center justify-center h-full">
+                    <h2 className="text-4xl font-serif text-white mb-4">Love</h2>
+                    <img src="./asset/laura-vinck-Hyu76loQLdk-unsplash.jpg" className="w-16 h-16 rounded" referrerPolicy="no-referrer" />
+                  </div>
+                </motion.div>
               </div>
             </div>
           </ViewWrapper>
