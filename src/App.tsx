@@ -94,7 +94,7 @@ const ART_DATA: ArtItem[] = [
     id: '7',
     thumbnail: walloImg,
     image: walloImg,
-    artist: '왈로',
+    artist: '왈루',
   },
   {
     id: '8',
