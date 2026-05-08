@@ -45,7 +45,7 @@ interface NovelItem {
   content: string;
 }
 
-interface LoveMessage {
+interface LOVE_MESSAGES {
   id: string;
   text: string;
   side: 'left' | 'right';
@@ -517,13 +517,13 @@ const NOVEL_DATA: NovelItem[] = [
 const LOVE_DATA: LOVE_MESSAGES [] = [
 
   {
-      id: "L1";
+      id: "L1",
   text: "로한선생님의 왕돼지돈까쓰히가시카타죠스케먹방 늘응원합니다.",
   side: 'left',
   sender: "돈까스망치 @pocoalwaysRight",
   },
 {
-      id: "L2";
+      id: "L2",
   text: "이제 다음은, 로장 2세 기원!",
   side: 'right',
   sender: "쿠야 @kuya_0416",
