@@ -107,7 +107,7 @@ const ART_DATA: ArtItem[] = [
 const NOVEL_DATA: NovelItem[] = [
   {
     id: '1',
-    thumbnail: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=200&auto=format&fit=crop',
+    thumbnail: './asset/thumbnail_bezeta.jpeg',
     artist: '베제타',
     name: 'Mille-Feuille and Fondant au chocolat',
     content: `“저기, 로한, 그…” 
@@ -267,7 +267,7 @@ const NOVEL_DATA: NovelItem[] = [
   },
   {
     id: '2',
-    thumbnail: 'https://images.unsplash.com/photo-1510674485131-dc88d96369b4?q=80&w=200&auto=format&fit=crop',
+    thumbnail: './asset/thumbnail_han.jpeg',
     artist: '한',
     name: '가을의 중심에서 외치다.',
     content: `가을은 정말 좋은 계절이었다. 특히 모리오초에서 맞이하는 가을이라면 더욱이었다. 여름처럼 너무 덥지도 않고, 겨울처럼 너무 춥지도 않고, 봄처럼 날씨가 변덕스럽지도 않은, 적당하면서 시원한 온도는 작업하기 좋은 환경을 만들어 주었다. 보통은 필요한 경우가 아니면 밖에 잘 나가지 않는 키시베 로한이었지만, 가을만큼은 조금 달랐다. 왠지 이 시기만큼은 밖에 나왔을 때 오히려 생각이 잘 풀리는 것 같은 느낌이었기 때문이다.
@@ -514,21 +514,20 @@ const NOVEL_DATA: NovelItem[] = [
   }
 ];
 
-const LOVE_MESSAGES: string[] = [
-  "로한선생님의 왕돼지돈까쓰히가시카타죠스케먹방 늘응원합니다.",
-  "To the most beautiful couple, may your love grow every day.",
-  "So happy to share this special day with you both.",
-  "Cheers to love, laughter, and happily ever after!",
-  "May your journey together be filled with sweet adventures.",
-  "You two are a match made in heaven.",
-  "Warmest congratulations on your wedding!",
-  "May the years ahead be filled with lasting joy.",
-  "Stay blessed and keep shining together.",
-  "Beautiful wedding, even more beautiful couple.",
-  "Love is patients, love is kind. May yours be eternal.",
-  "Today is the beginning of a wonderful story.",
-  "Sending you so much love today and always.",
-  "May your home be full of laughter and hearts full of love."
+const LOVE_DATA: LOVE_MESSAGES [] = [
+
+  {
+      id: "L1";
+  text: "로한선생님의 왕돼지돈까쓰히가시카타죠스케먹방 늘응원합니다.",
+  side: 'left',
+  sender: "돈까스망치 @pocoalwaysRight",
+  },
+{
+      id: "L2";
+  text: "이제 다음은, 로장 2세 기원!",
+  side: 'right',
+  sender: "쿠야 @kuya_0416",
+}
 ];
 
 // --- Components ---
