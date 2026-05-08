@@ -515,7 +515,7 @@ const NOVEL_DATA: NovelItem[] = [
 ];
 
 const LOVE_MESSAGES: string[] = [
-  "Wishing you a lifetime of happiness!",
+  "로한선생님의 왕돼지돈까쓰히가시카타죠스케먹방 늘응원합니다.",
   "To the most beautiful couple, may your love grow every day.",
   "So happy to share this special day with you both.",
   "Cheers to love, laughter, and happily ever after!",
