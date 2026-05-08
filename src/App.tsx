@@ -26,6 +26,8 @@ import quaImg from '../asset/qua.png';
 import lucaImg from '../asset/luca-nicoletti-nazeUct7aPs-unsplash.jpg';
 import madisonImg from '../asset/madison-o-friel-oHxUp1NdP_s-unsplash.jpg';
 import lauraImg from '../asset/laura-vinck-Hyu76loQLdk-unsplash.jpg';
+import thumbnailBezeta from '../asset/thumbnail_bezeta.jpeg';
+import thumbnailHan from '../asset/thumbnail_han.jpeg';
 
 // --- Types ---
 type View = 'entry' | 'menu' | 'art' | 'novel' | 'love';
@@ -107,7 +109,7 @@ const ART_DATA: ArtItem[] = [
 const NOVEL_DATA: NovelItem[] = [
   {
     id: '1',
-    thumbnail: '../asset/thumbnail_bezeta.jpeg',
+    thumbnail: thumbnailBezeta,
     artist: '베제타',
     name: 'Mille-Feuille and Fondant au chocolat',
     content: `“저기, 로한, 그…” 
@@ -267,10 +269,10 @@ const NOVEL_DATA: NovelItem[] = [
   },
   {
     id: '2',
-    thumbnail: '../asset/thumbnail_han.jpeg',
+    thumbnail: thumbnailHan,
     artist: '한',
     name: '가을의 중심에서 외치다.',
-    content: `가을은 정말 좋은 계절이었다. 특히 모리오초에서 맞이하는 가을이라면 더욱이었다. 여름처럼 너무 덥지도 않고, 겨울처럼 너무 춥지도 않고, 봄처럼 날씨가 변덕스럽지도 않은, 적당하면서 시원한 온도는 작업하기 좋은 환경을 만들어 주었다. 보통은 필요한 경우가 아니면 밖에 잘 나가지 않는 키시베 로한이었지만, 가을만큼은 조금 달랐다. 왠지 이 시기만큼은 밖에 나왔을 때 오히려 생각이 잘 풀리는 것 같은 느낌이었기 때문이다.
+    content: `가을은 정말 좋은 계절이었다. 특히 모리오초에서 맞이하는 가을이라면 더욱이었다. 여름처럼 너무 덥지도 않고, 겨울처럼 너무 춥지도 않고, 봄처럼 날씨가 변덕스럽지도 않은, 적당하면서 시원한 온도는 작업하기 좋은 환경이 되어 주었다. 보통은 필요한 경우가 아니면 밖에 잘 나가지 않는 키시베 로한이었지만, 가을만큼은 조금 달랐다. 왠지 이 시기만큼은 밖에 나왔을 때 오히려 생각이 잘 풀리는 것 같은 느낌이었기 때문이다.
 
 모리오초는 유독 수풀이 우거진, 시골 같은 마을이었다. 그 덕에 9월에서 10월로 넘어갈 즈음이면, 남녀노소 할 것 없이 많은 이들이 단풍을 즐기려 나오곤 했다. 4월의 벚꽃 과는 또 다른, 차분하고 성숙한 정취를 풍겼다.
 
