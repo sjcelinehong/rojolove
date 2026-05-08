@@ -514,6 +514,20 @@ const NOVEL_DATA: NovelItem[] = [
   }
 ];
 
+const LOVE_GUEST_NAMES: string[] = [
+  '돈까스망치 @pocoalwaysRight',
+  '쿠야 @kuya_0416',
+  '이온 @EONim8451',
+  '김윤지 @samaz0_',
+  '베제타 @b_z_eta_',
+  '깝싹이 @kkabssag',
+  '앗 @1000000jobs',
+  '왈루 @stillwarluVIP',
+  '밈지 @mimsy_lost_art',
+  '한 @han_means',
+  '메죠 @rizzo____'
+];
+
 const LOVE_MESSAGES: string[] = [
   "로한선생님의 왕돼지돈까쓰히가시카타죠스케먹방 늘응원합니다.",
   "이제 다음은, 로장 2세 기원!",
@@ -529,6 +543,9 @@ const LOVE_MESSAGES: string[] = [
   "이번 로장 웨딩 합작에 참여하게 되어 영광이였습니다!! 감기와 현생 이슈만 아니였다면 더 열심히 쓴 글을 보여드리고 싶었는데 여러모로 아쉽네요 ㅜ.ㅜ 그래도 로장 관계에 있어 전환점을 다루는 글이라고 생각해주셨으면 좋겠습니다! 다음 합작이 있다면 또 하고싶어요!!",
   "다음 합작은 이혼으로 갈까요?ㅎㅎ",
 ];
+
+const getLoveMessageSender = (index: number) => LOVE_GUEST_NAMES[index] ?? `Guest_${index + 1}`;
+
 
 // --- Components ---
 
@@ -565,7 +582,7 @@ export default function App() {
         id: i.toString(),
         text: m,
         side: i % 2 === 0 ? 'left' : ('right' as 'left' | 'right'),
-        sender: `Guest_${i + 1}`
+        sender: getLoveMessageSender(i)
       }));
       setVisibleBubbles(initial);
     }
@@ -582,7 +599,7 @@ export default function App() {
           id: nextIdx.toString(),
           text: LOVE_MESSAGES[nextIdx],
           side: nextIdx % 2 === 0 ? 'left' : 'right',
-          sender: `Guest_${nextIdx + 1}`
+          sender: getLoveMessageSender(nextIdx)
         };
         setVisibleBubbles(prev => [...prev, nextMessage]);
       }
